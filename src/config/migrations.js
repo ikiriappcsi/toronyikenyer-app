@@ -153,6 +153,6 @@ const runMigrations = async () => {
 
 module.exports = {
     createTables,
-    insertDefaultData,
+    insertSampleData: insertDefaultData,
     runMigrations
 };
