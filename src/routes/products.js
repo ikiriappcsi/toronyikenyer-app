@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const path = require('path');
-const Product = require(path.join(__dirname, '..', 'models', 'Product'));
-
+const Product = require('../models/Product');
 
 // GET /api/v1/products - Összes termék lekérése
 router.get('/', async (req, res) => {
