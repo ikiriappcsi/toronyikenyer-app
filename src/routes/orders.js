@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Order = require('./models/order');
+const Product = require(__dirname + '/../models/Product');
 
 // POST /api/v1/orders - Új rendelés létrehozása
 router.post('/', async (req, res) => {
