@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const Product = require(__dirname + '/../models/Product');
+const path = require('path');
+const Product = require(path.join(__dirname, '..', 'models', 'Product'));
 
 
 // GET /api/v1/products - Összes termék lekérése
